@@ -1,0 +1,125 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf100
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf0 CLUE: Footage from an ATM security camera is blurry but shows that the perpetrator is a tall male, at least 6'.\
+\
+CLUE: Found a wallet believed to belong to the killer: no ID, just loose change, and membership cards for AAA, Delta SkyMiles, the local library (TCPL), and the Museum of Bash History. The cards are totally untraceable and have no name, for some reason.\
+\
+CLUE: Questioned the barista at the local coffee shop. He said a woman left right before they heard the shots. The name on her latte was Annabel, she had blond spiky hair and a New Zealand accent.\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+MEMBERSHIPS:\
+AAA\
+Delta Skymiles\
+local library\
+Museum of Bash History\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+/Users/akexinad/projects/clmystery-master/mystery/people:Annabel Sun	F	26	Hart Place, line 40\
+			[SEE INTERVIEW #47246024]\
+\
+/Users/akexinad/projects/clmystery-master/mystery/people:Oluwasegun Annabel	M	37	Mattapan Street, line 173\
+			[SEE INTERVIEW #9437737]\
+\
+/Users/akexinad/projects/clmystery-master/mystery/people:Annabel Church	F	38	Buckingham Place, line 179\
+			[SEE INTERVIEW #699607]\
+\
+/Users/akexinad/projects/clmystery-master/mystery/people:Annabel Fuglsang	M	40	Haley Street, line 176\
+			[SEE INTERVIEW #871877]\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+HONDA PLATE NUMBERS\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+License Plate L337ZR9\
+License Plate L337P89\
+License Plate L337GX9\
+License Plate L337QE9\
+License Plate L337GB9\
+License Plate L337OI9\
+License Plate L337X19\
+License Plate L337539\
+License Plate L3373U9\
+License Plate L337369\
+License Plate L337DV9\
+License Plate L3375A9\
+License Plate L337WR9\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+OWNERS AND HEIGHT\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+Gespr:clmystery-master akexinad$ grep -A 5 "L337" mystery/vehicles\
+License Plate L337ZR9\
+Make: Honda\
+Color: Red\
+Owner: Katie Park\
+Height: 6'2"\
+Weight: 189 lbs\
+\
+NOTE = WOMAN\
+\
+--\
+License Plate L337P89\
+Make: Honda\
+Color: Teal\
+Owner: Mike Bostock\
+Height: 6'4"\
+Weight: 173 lbs\
+--\
+License Plate L337539\
+Make: Honda\
+Color: Blue\
+Owner: Aron Pilhofer\
+Height: 5'3"\
+Weight: 198 lbs\
+\'97\
+License Plate L3375A9\
+Make: Honda\
+Color: Blue\
+Owner: Jeremy Bowers\
+Height: 6'1"\
+Weight: 204 lbs\
+\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+HINT 5\
+\
+Gespr:clmystery-master akexinad$ cat hint5\
+"Interview" the two possible witnesses by reading the correct line from the streets they live on:\
+\
+	head -n 173 streets/Mattapan_Street | tail -n 1\
+\
+This will give you just line 173 of Mattapan street, because it will take first 173 lines, and then take\
+the last line from those.\
+\
+HINT 6\
+\
+Gespr:clmystery-master akexinad$ cat hint6\
+To find a matching license plate, or a matching car, you can use grep on the 'vehicles' file:\
+\
+	grep "Honda" vehicles\
+\
+	grep "Blue" vehicles\
+\
+	grep "L337" vehicles\
+\
+This doesn't give us anything useful - why not? Try using 'head' on the file to investigate its structure.\
+\
+HINT7\
+\
+In order to actually get information about vehicles that might match our description,\
+we need to get multiple lines AROUND each match.  We can use the -A, -B, or -C option with grep:\
+\
+	grep -A 5 "L337" mystery/vehicles\
+\
+This will match the license plates that contain "L337" and, for each match, show us the five lines AFTER it.\
+\
+}

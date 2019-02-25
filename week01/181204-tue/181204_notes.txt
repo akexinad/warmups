@@ -1,0 +1,4 @@
+- Computers essentially do anything
+    - They are a tabula rasa. A blank slate that can 'compute' basically anything.
+
+- Computers are a GENERAL PURPOSE MACHINE

@@ -1,0 +1,9 @@
+#words {
+  /* display: none; */
+  background-color: black;
+}
+
+.word {
+  display: none;
+  position: absolute;
+}

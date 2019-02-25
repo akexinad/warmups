@@ -1,0 +1,4 @@
+- sourcetree is a software that visualises the git terminal.
+
+- megganeturner@gmail.com
+    - GA mentor programme.

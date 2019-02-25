@@ -1,0 +1,13 @@
+body {
+  margin: 0 auto;
+  width: 960px;
+  background-color: pink;
+}
+
+
+h1 {
+  text-align: center;
+  margin: 200px 0 0 0;
+  font-size: 60px;
+  text-decoration: underline;
+}
