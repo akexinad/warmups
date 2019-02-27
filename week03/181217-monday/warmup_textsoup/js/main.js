@@ -22,7 +22,6 @@ function shuffle(a) {
 */
 
 
-
 const textSoup = {
   randomise: function (text) {
     let textArray = text.split(" ");
